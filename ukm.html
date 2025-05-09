@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Makanan Tradisional Pyury</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            fadeIn: 'fadeIn 1.5s ease-in-out'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 }
+            }
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-yellow-700 text-white p-6 text-center shadow-md">
+    <h1 class="text-3xl font-bold">UKM Makanan Tradisional Pury</h1>
+    <nav class="mt-2 flex justify-center flex-wrap items-center gap-4">
+      <a href="#" class="hover:underline">Beranda</a>
+      <a href="#produk" class="hover:underline">Produk</a>
+      <a href="#lokasi" class="hover:underline">Lokasi</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-yellow-100 py-10 px-6 sm:px-16">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl mx-auto animate-fadeIn">
+      <div class="text-center md:text-left flex-1">
+        <h2 class="text-3xl font-bold mb-4 text-yellow-800">Selamat Datang di UKM Makanan Tradisional</h2>
+        <p class="text-gray-700 mb-6">
+          Kami menghadirkan makanan tradisional khas Indonesia yang dibuat dengan cinta dan resep warisan turun-temurun. Rasakan kenikmatan kuliner lokal yang autentik dan menggugah selera!
+        </p>
+        <a href="#produk" class="inline-block bg-yellow-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition">
+          Lihat Produk Kami
+        </a>
+      </div>
+      <div class="flex-1">
+        <img src="section.jpg" alt="Makanan Tradisional" class="w-full max-w-md mx-auto rounded-lg shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk -->
+  <section id="produk" class="p-6 sm:p-8">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Katalog Produk</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 animate-fadeIn">
+      <!-- Produk contoh -->
+      <div class="border rounded-xl p-4 shadow-md hover:shadow-xl transition transform hover:scale-105">
+        <img src="lapis.jpeg" alt="Kue Lapis" class="w-full h-40 object-cover rounded-md" />
+        <h3 class="text-xl font-semibold mt-3">Kue Lapis</h3>
+        <p class="text-sm text-gray-600">Rp 5.000</p>
+         <a href="https://wa.me/6281286445195?text=Halo%20saya%20mau%20pesan%20Kue%20Lapis"
+           class="mt-3 inline-block bg-green-500 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-green-600 transition">
+          Pesan via WhatsApp
+        </a>
+      </div>
+      <div class="border rounded-xl p-4 shadow-md hover:shadow-xl transition transform hover:scale-105">
+        <img src="lemper.jpg" alt="Lemper" class="w-full h-40 object-cover rounded-md" />
+        <h3 class="text-xl font-semibold mt-3">Lemper</h3>
+        <p class="text-sm text-gray-600">Rp 4.500</p>
+         <a href="https://wa.me/6281286445195?text=Halo%20saya%20mau%20pesan%20lLemper"
+           class="mt-3 inline-block bg-green-500 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-green-600 transition">
+          Pesan via WhatsApp
+        </a>
+
+      </div>
+      <div class="border rounded-xl p-4 shadow-md hover:shadow-xl transition transform hover:scale-105">
+        <img src="risoles.jpg" alt="Kue Lapis" class="w-full h-40 object-cover rounded-md" />
+        <h3 class="text-xl font-semibold mt-3">Risoles</h3>
+        <p class="text-sm text-gray-600">Rp 3.000</p>
+         <a href="https://wa.me/6281286445195?text=Halo%20saya%20mau%20pesan%20Risoles"
+           class="mt-3 inline-block bg-green-500 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-green-600 transition">
+          Pesan via WhatsApp
+        </a>
+
+      </div>
+      <div class="border rounded-xl p-4 shadow-md hover:shadow-xl transition transform hover:scale-105">
+        <img src="klepon.jpeg" alt="Klepon" class="w-full h-40 object-cover rounded-md" />
+        <h3 class="text-xl font-semibold mt-3">Klepon</h3>
+        <p class="text-sm text-gray-600">Rp 4.000</p>
+         <a href="https://wa.me/6281286445195?text=Halo%20saya%20mau%20pesan%20Klepon"
+           class="mt-3 inline-block bg-green-500 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-green-600 transition">
+          Pesan via WhatsApp
+        </a>
+
+      </div>
+      <div class="border rounded-xl p-4 shadow-md hover:shadow-xl transition transform hover:scale-105">
+        <img src="onde.jpeg" alt="Onde" class="w-full h-40 object-cover rounded-md" />
+        <h3 class="text-xl font-semibold mt-3">Onde</h3>
+        <p class="text-sm text-gray-600">Rp 6.000</p>
+        <a href="https://wa.me/6281286445195?text=Halo%20saya%20mau%20pesan%20Onde"
+           class="mt-3 inline-block bg-green-500 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-green-600 transition">
+          Pesan via WhatsApp
+        </a>
+      </div>
+      <div class="border rounded-xl p-4 shadow-md hover:shadow-xl transition transform hover:scale-105">
+        <img src="serabi.jpg" alt="Serabi" class="w-full h-40 object-cover rounded-md" />
+        <h3 class="text-xl font-semibold mt-3">Serabi</h3>
+        <p class="text-sm text-gray-600">Rp 4.500</p>
+        <a href="https://wa.me/6281286445195?text=Halo%20saya%20mau%20pesan%20Serabi"
+           class="mt-3 inline-block bg-green-500 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-green-600 transition">
+          Pesan via WhatsApp
+        </a>
+      </div>
+      <!-- Tambahkan produk lain di sini -->
+    </div>
+  </section>
+
+  <!-- Lokasi -->
+  <section id="lokasi" class="py-16 px-6 sm:px-16 bg-white">
+    <div class="max-w-4xl mx-auto text-center animate-fadeIn">
+      <h2 class="text-2xl font-semibold mb-4">Lokasi Kami</h2>
+      <p class="mb-4">Datang langsung ke tempat kami untuk melihat dan membeli produk UKM secara langsung.</p>
+      <p class="text-lg font-medium mb-6">Jl. Cibarusah, Bekasi, Indonesia</p>
+      <div class="w-full h-64 md:h-96 rounded-lg overflow-hidden shadow-md">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3355.5348039495134!2d107.05962837415014!3d-6.433411443557709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbumi%20cibarusah%20asri!5e1!3m2!1sen!2sid!4v1746710953989!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- Sosial Media di bawah map -->
+      <div class="flex justify-center gap-6 mt-6">
+        <a href="https://www.instagram.com/______.fort309" target="_blank" aria-label="Instagram" class="text-pink-500 hover:text-pink-600 text-2xl">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/6281286445195" target="_blank" aria-label="WhatsApp" class="text-green-500 hover:text-green-600 text-2xl">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-700 text-white py-6 mt-10">
+    <div class="text-center text-sm">
+      &copy; 2025 Makanan Tradisional Pyury. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
